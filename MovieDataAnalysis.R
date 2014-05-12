@@ -29,3 +29,6 @@ Movie_Data$AverageGross = sub(',','', Movie_Data$AverageGross, fixed=TRUE)
 
 # Removing percent signs
 Movie_Data$PercentTotalGross = sub('%','', Movie_Data$PercentTotalGross, fixed=TRUE)
+
+# New movie data
+m <- read.table("movies.tab", sep="\t", header=TRUE, quote="", comment="")
